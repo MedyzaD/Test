@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="../static/table.css" rel="stylesheet" />
+<ul>
+    {% for name in tables %}
+
+    <li>
+        <a href="{{ url_for('database_t', table = name) }}"><ab>{{ name }}</ab></a>|
+    </li>
+    {% endfor %}
+
+</ul>
+<hr color="white">
+{% if isTableOpen %}
+<section class="container1">
+    {% include 'user_form.html' %}
+
+</section>
+<section class="container2">
+    {% include 'table.html' %}
+</section>
+{% endif %}
+{% endblock %}

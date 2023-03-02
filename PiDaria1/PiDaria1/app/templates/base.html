@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>PiDaria</title>
+    <link href="../static/base.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <section class="shapka_home">
+            <a href="{{ url_for('index') }}">
+                <img src="../static/images/Home.png" width="100">
+            </a>
+        </section>
+        <section class="loginlogout">
+                {% if not g.user.name %}
+                <a href="{{ url_for('admin') }}">
+                LOGIN</a>
+                {% else %}
+                <a href="{{ url_for('logout') }}">
+                LOGOUT
+                </a>
+                {% endif %}
+        </section>
+    </header>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<link href="../static/login.css" rel="stylesheet" />
+<main>
+    <form action="" method="post" name="login">
+        {{form.hidden_tag()}}
+        <p>
+            Please enter password:<br>
+            {{form.openid(size=50)}}
+            <input type="submit" value="OK">
+        </p>
+    </form>
+</main>
+{% endblock %}

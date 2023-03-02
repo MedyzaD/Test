@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="../static/index.css" rel="stylesheet" />
+<main >
+    <div class="outline">
+        <c>{{namedb}}</c>
+    </div>
+    <div class="container">
+        <button class="button">   
+                <a href="{{ url_for('database') }}" class="btn"> 
+            <img src="static\images\connect.png" width="200" height="80"></a>     
+        </button>
+    </div>
+    <a href="{{ url_for('admin') }}"><b>I'm admin</b></a>
+
+</main>
+{% endblock %}

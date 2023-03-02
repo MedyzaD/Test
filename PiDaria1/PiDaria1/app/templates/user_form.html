@@ -1,0 +1,26 @@
+<link href="../static/user_form.css" rel="stylesheet" />
+<form action="" method="post" name="edit">
+    {{form.hidden_tag()}}
+    <div class="spisok">
+        <label> Find</label>
+        {{form.search_column(class="spiski")}}
+    </div>
+
+    <div>
+        {{form.win_search(class="polevvoda")}}
+    </div>
+
+    <div class="spisok">
+        <label> Sort</label>
+        {{form.sort_column(class="spiski")}}
+    </div>
+
+    <div class="obrpor">
+        {{form.desc()}}
+        <label>In reverse order</label>
+    </div>
+
+    <div class="kn">
+        <input class="custom-btn btn-15" type="submit" value="OK">
+    </div>
+</form>

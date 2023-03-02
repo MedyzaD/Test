@@ -1,0 +1,18 @@
+
+
+    <table>
+        <tbody>
+            <tr>
+                {% for top in field %}
+                <th scope="col">{{ top }}</th>
+                {% endfor %}
+            </tr>
+            {% for str in tbody %}
+            <tr>
+                {% for cul in str %}
+                <td>{{ cul }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>

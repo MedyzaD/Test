@@ -1,0 +1,53 @@
+body {
+    background: #000 url("images/background.png"); 
+    color: #fff;
+    background-size: 100% ;
+}
+
+header {
+    border-bottom: 20px #CC81F4;
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+ab {
+    font-size: 40px;
+    padding: 20px;
+    color: #F9E0FC;
+    
+}
+
+    ab:hover {
+        cursor: pointer;
+        color: #6E007D;
+        
+    }
+
+li {
+    display: inline;
+}
+
+a {
+    font-size: 20px;
+    color: rgba(216,8,106,1.00);
+    text-decoration: none;
+}
+
+    a:hover {
+        cursor: pointer;
+        color: #6E007D;
+        text-decoration: none;
+    }
+
+.shapka_home {
+    width: 20%;
+    position: absolute;
+}
+
+.loginlogout {
+    right: 20%;
+    text-align: right;
+}

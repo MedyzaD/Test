@@ -1,0 +1,42 @@
+table {
+    width: auto;
+    border-collapse: collapse;
+    text-align: center;
+    border: solid;
+    border-radius: 20px;
+}
+
+th {
+    font-weight: normal;
+    font-size: 20px;
+    color: #BA079F;
+    padding: 10px 12px;
+    background: white;
+}
+
+td {
+    border-top: 1px solid white;
+    padding: 10px 12px;
+    background: rgba(51, 51, 153, .2);
+    transition: .3s;
+}
+
+tr td:hover {
+    background: rgba(51, 51, 153, .1);
+}
+
+.container1 {
+    background: rgba(255,255,255,0.56);
+    position: absolute;
+    width: 15%;
+}
+
+.container2 {
+    left: 16%;
+    position: absolute;
+    width: 79%;
+}
+
+li {
+    text-align: right;
+}
