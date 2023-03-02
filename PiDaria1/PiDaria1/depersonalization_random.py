@@ -41,7 +41,7 @@ class Hash:
         year -= randint(-42, 42)
         year = str(year)
         year_new = year[2] + year[0] + year[3] + year[1]
-        month = str((int(month) + randint(0, 10)) % 12)
+        month = str((int(month) + randint(0, 10)) % 12 + 1)
         day = str((int(day) + randint(-21, 21)) % 28)
         return '-'.join((year_new, month, day))
 
