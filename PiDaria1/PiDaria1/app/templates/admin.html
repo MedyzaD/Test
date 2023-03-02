@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+<link href="../static/admin.css" rel="stylesheet" />
+<div class="update">
+    <p> Hi, ADMIN!</p>
+    <p>If you have changed the original data table, then click this button</p>
+    <button class="custom-bt btn-1">
+    <a href="{{ url_for('database') }}" class="btn">
+        UPDATE
+    </a>
+</button>
+</div>
+
+
+{% endblock %}
