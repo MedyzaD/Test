@@ -81,6 +81,6 @@ def database_t(table):
 @app.route('/admin')
 @login_required 
 def admin():
-    return render_template("index.html",
-        namedb = db.namedb)
+    return render_template("admin.html")
+
 
